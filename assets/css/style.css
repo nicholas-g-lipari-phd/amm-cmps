@@ -19,7 +19,7 @@
 .time {
     padding-left: 2ex;
     padding-right: 1ex;
-    padding-top: 0ex;
+    padding-top: 0;
     display: table-cell;
     min-width: 12ex;
     width: 12ex;
@@ -30,9 +30,9 @@
 .day {
     /*border: 1px solid;*/
     width: 17.65ex;
-    padding-top: 0ex;
-    padding-left: 0ex;
-    padding-right: 0ex;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
     color: #343434;
     font-weight: bold;
     display: table-cell;
@@ -43,21 +43,21 @@
     font-weight: bold;
     padding-left: 0.5ex;
     padding-right: 0.5ex;
-    padding-top: 0ex;
+    padding-top: 0;
     display: table-cell;
 }
 
 .course2 {
     width: 4ex;
-    padding-top: 0ex;
+    padding-top: 0;
     padding-left: 0.5ex;
     padding-right: 0.5ex;
     display: table-cell;
 }
 
 .gap {
-    padding-left: 0ex;
-    padding-right: 0ex;
+    padding-left: 0;
+    padding-right: 0;
     /*padding-top: 30px;*/
     width: 2ex;
     background: #8009091c;
