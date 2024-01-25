@@ -5,176 +5,191 @@
    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
    -->
 <html lang="en">
-   <head>
-      <title>Academic Mentoring Matters — CMPS</title>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-      <link rel="prefetch" href="/amm-cmps-sp24-table.html" />
-      <link rel="preload" as="image" href="assets/css/images/top-3200.svg">
-      <link rel="preload" as="image" href="assets/css/images/overlay-verm.png">
-      <link rel="preload" as="image" href="images/header-amm.jpg">
-      <link rel="preload" as="image" href="images/amm-horiz.png">
-      <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
-      <link rel="stylesheet" href="assets/css/main.css" />
-        <link href="assets/css/style.css" rel="stylesheet"/>
+<head>
+    <title>Academic Mentoring Matters — CMPS</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="prefetch" href="/amm-cmps-sp24-table.html"/>
+    <link rel="preload" as="image" href="assets/css/images/top-3200.svg">
+    <link rel="preload" as="image" href="assets/css/images/overlay-verm.png">
+    <link rel="preload" as="image" href="images/header-amm.jpg">
+    <link rel="preload" as="image" href="images/amm-horiz.png">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link href="assets/css/style.css" rel="stylesheet"/>
 
-        <!-- https://www.w3schools.com/howto/howto_html_include.asp -->
-        <script>
+    <!-- https://www.w3schools.com/howto/howto_html_include.asp -->
+    <script>
         function includeHTML() {
-          var z, i, elmnt, file, xhttp;
-          /* Loop through a collection of all HTML elements: */
-          z = document.getElementsByTagName("*");
-          for (i = 0; i < z.length; i++) {
-            elmnt = z[i];
-            /*search for elements with a certain atrribute:*/
-            file = elmnt.getAttribute("w3-include-html");
-            if (file) {
-              /* Make an HTTP request using the attribute value as the file name: */
-              xhttp = new XMLHttpRequest();
-              xhttp.onreadystatechange = function() {
-                if (this.readyState === 4) {
-                  if (this.status === 200) {elmnt.innerHTML = this.responseText;}
-                  if (this.status === 404) {elmnt.innerHTML = "Page not found.";}
-                  /* Remove the attribute, and call this function once more: */
-                  elmnt.removeAttribute("w3-include-html");
-                  includeHTML();
+            var z, i, elmnt, file, xhttp;
+            /* Loop through a collection of all HTML elements: */
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /* Make an HTTP request using the attribute value as the file name: */
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState === 4) {
+                            if (this.status === 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status === 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /* Remove the attribute, and call this function once more: */
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /* Exit the function: */
+                    return;
                 }
-              }
-              xhttp.open("GET", file, true);
-              xhttp.send();
-              /* Exit the function: */
-              return;
             }
-          }
         }
-        </script>
+    </script>
 
-   </head>
-   <body class="is-preload">
-      <!-- Header -->
-      <div id="header">
-         <!--				<span class="logo icon fa-paper-plane"></span>-->
-         <!--<h1>Academic Mentoring Matters &mdash; CMPS</h1>-->
-         <img src="images/amm-horiz.png" style="width: 38%; min-width: 38ex; margin-top: -2.5em;" alt="AMM Logo">
-         <p>
-            <emph><i>Academic Mentoring Matters (AMM) offers tutoring by fellow students in the Computer Science program.
-               <br>
-               CMPS Courses with Mentors available in OLVR 211 are listed below.
-               </i>
-            </emph>
-         </p>
-      </div>
+</head>
+<body class="is-preload">
+<!-- Header -->
+<div id="header">
+    <!--				<span class="logo icon fa-paper-plane"></span>-->
+    <!--<h1>Academic Mentoring Matters &mdash; CMPS</h1>-->
+    <img src="images/amm-horiz.png" style="width: 38%; min-width: 38ex; margin-top: -2.5em;" alt="AMM Logo">
+    <p>
+        <emph><i>Academic Mentoring Matters (AMM) offers tutoring by fellow students in the Computer Science program.
+            <br>
+            CMPS Courses with Mentors available in OLVR 211 are listed below.
+        </i>
+        </emph>
+    </p>
+</div>
 
-      <!-- Main -->
-      <div id="main">
-         <header class="major container" style="margin: auto">
-         	<h3 style=  "background-color: #5a0808;
+<!-- Main -->
+<div id="main">
+    <header class="major container" style="margin: auto">
+        <h3 style="background-color: #5a0808;
                         color: #ffffffd9; 
                         padding-top: 1em; 
                         padding-bottom: 1em;">CMPS Courses with Mentors available in OLVR 211
-                        <span style=    "text-transform: none;
+            <span style="text-transform: none;
                                         font-weight: normal;
                                         font-style: italic;
                                         font-size: smaller;">
                         <br>Spring 2024 Mentoring begins Jan 29.</span>
-            </h3>
+        </h3>
 
 
         <!-- BEGIN IMPORT -->
-            <div w3-include-html="amm-cmps-sp24-table.html"></div>
+        <div w3-include-html="amm-cmps-sp24-table.html"></div>
 
         <!-- END IMPORT -->
 
-         </header>
+    </header>
 
-         <section>
-	         <!--<header style="
-					    padding-bottom: 1em;
-					    background: white;
-					    padding-top: 1em;
-					    /*border-bottom-width: 1px;
-					    border-color: rgba(224, 224, 224, 0.75);
-					    border-style: solid;*/
-					    margin-left: auto;
-					    margin-right: auto;
-					    width: 26em;">
-					<h3>Meet Our Mentors</h3>
+    <section>
+        <!--<header style="
+                   padding-bottom: 1em;
+                   background: white;
+                   padding-top: 1em;
+                   /*border-bottom-width: 1px;
+                   border-color: rgba(224, 224, 224, 0.75);
+                   border-style: solid;*/
+                   margin-left: auto;
+                   margin-right: auto;
+                   width: 26em;">
+               <h3>Meet Our Mentors</h3>
 
-         	</header>-->
-         	<header>
-					<h2>&nbsp;</h2>
-         	</header>
-	         	<div class="box alt container">
-
-
-                        <section class="feature right">
-                              <a href="https://discord.gg/Yg66SeYr" class="image icon solid brands fa-discord  fa-flip-horizontal fa-lg" target="_blank"><img src="images/pic01.jpg" alt="" /></a>
-                              <div class="content" style="padding : 1.5em; padding-left: 0;">
-		                  <h3>These times don't work?</h3>
-                                    <p>  There is also mentoring available on our Discord server.
-                                          Visit the appropriate channel for your course (e.g.,
-                                          <span style="font-weight:600"># cmps-150</span>).
-                                          Additional help can be provided over Zoom. Simply direct message any of the mentors.  </p>
-                              </div>
-						</section>
-						<section class="feature left">
-							<a href="#" class="image icon solid fa-code fa-lg"><img src="images/pic02.jpg" alt="" /></a>
-							<div class="content">
-								<h3>About Us</h3>
-								<p>Academic Mentoring Matters (AMM) is a program that started within the Ray P. Authement College of Sciences, in which students taking certain science courses can be tutored one-on-one by students who have already taken these classes and earned an "A." </p>
-							</div>
-						</section>
-						<section class="feature right">
-							<a href="#" class="image icon solid fa-microchip fa-lg "><img src="images/pic01.jpg" alt="" /></a>
-							<div class="content">
-
-								<p> Our mentors volunteer 2 hours a week to assist any
-                                                students taking Computer Science courses.</p>
-							</div>
-						</section>
-						<section class="feature left">
-							<a href="#" class="image icon solid fa-wifi fa-lg"><img src="images/pic03.jpg" alt="" /></a>
-							<div class="content">
-
-								<p>Since the beginning of Academic Mentoring Matters in 2014, the program has been helping out fellow students as we embark on the academic journey to success. </p>
-							</div>
-						</section>
-						<section class="feature right">
-							<a href="#" class="image icon solid fa-code-branch fa-lg"><img src="images/pic02.jpg" alt="" /></a>
-							<div class="content">
-
-								<p>Throughout the years, AMM has grown in both the number of mentors and in the number of students using the program. Academic Mentoring Matters is completely free for students to use! We strive every day to enrich the experiences of each student by allowing students to help others and to be helped by their peers. </p>
-							</div>
-						</section>
+        </header>-->
+        <header>
+            <h2>&nbsp;</h2>
+        </header>
+        <div class="box alt container">
 
 
-					</div>
-				</section>
+            <section class="feature right">
+                <a href="https://discord.gg/Yg66SeYr"
+                   class="image icon solid brands fa-discord  fa-flip-horizontal fa-lg" target="_blank"><img
+                        src="images/pic01.jpg" alt=""/></a>
+                <div class="content" style="padding : 1.5em; padding-left: 0;">
+                    <h3>These times don't work?</h3>
+                    <p> There is also mentoring available on our Discord server.
+                        Visit the appropriate channel for your course (e.g.,
+                        <span style="font-weight:600"># cmps-150</span>).
+                        Additional help can be provided over Zoom. Simply direct message any of the mentors. </p>
+                </div>
+            </section>
+            <section class="feature left">
+                <a href="#" class="image icon solid fa-code fa-lg"><img src="images/pic02.jpg" alt=""/></a>
+                <div class="content">
+                    <h3>About Us</h3>
+                    <p>Academic Mentoring Matters (AMM) is a program that started within the Ray P. Authement College of
+                        Sciences, in which students taking certain science courses can be tutored one-on-one by students
+                        who have already taken these classes and earned an "A." </p>
+                </div>
+            </section>
+            <section class="feature right">
+                <a href="#" class="image icon solid fa-microchip fa-lg "><img src="images/pic01.jpg" alt=""/></a>
+                <div class="content">
+
+                    <p> Our mentors volunteer 2 hours a week to assist any
+                        students taking Computer Science courses.</p>
+                </div>
+            </section>
+            <section class="feature left">
+                <a href="#" class="image icon solid fa-wifi fa-lg"><img src="images/pic03.jpg" alt=""/></a>
+                <div class="content">
+
+                    <p>Since the beginning of Academic Mentoring Matters in 2014, the program has been helping out
+                        fellow students as we embark on the academic journey to success. </p>
+                </div>
+            </section>
+            <section class="feature right">
+                <a href="#" class="image icon solid fa-code-branch fa-lg"><img src="images/pic02.jpg" alt=""/></a>
+                <div class="content">
+
+                    <p>Throughout the years, AMM has grown in both the number of mentors and in the number of students
+                        using the program. Academic Mentoring Matters is completely free for students to use! We strive
+                        every day to enrich the experiences of each student by allowing students to help others and to
+                        be helped by their peers. </p>
+                </div>
+            </section>
 
 
-         <footer class="major container medium">
-            <h3>Interested in becoming a Peer Mentor?</h3>
-            <p style="margin-bottom: 1ex;">The Mentoring Matters (peer student mentoring program) of CMPS is asking for volunteer students who are willing to serve as peer mentors for 2 hours/week. Students interested in mentoring a specific CMPS course should contact Dr. Lipari via email or in person. Students from the ACM and ACM-W as well as the Honors program are especially encouraged.</p>
-            <!--<ul class="actions special">
-               <li><a href="#" class="button">Join our crew</a></li>
-               </ul>-->
-         </footer>
-      </div>
-      <!-- Footer -->
-      <div id="footer">
-         <div class="container medium">
-            <ul class="copyright">
-               <li>&copy; University of Louisiana at Lafayette. All rights reserved.</li>
-               <li>Design: <i>Directive</i> by <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
-            </ul>
-         </div>
-      </div>
-      <!-- Scripts -->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/browser.min.js"></script>
-      <script src="assets/js/breakpoints.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <script src="assets/js/main.js"></script>
-      <script>includeHTML();</script>
-   </body>
+        </div>
+    </section>
+
+
+    <footer class="major container medium">
+        <h3>Interested in becoming a Peer Mentor?</h3>
+        <p style="margin-bottom: 1ex;">The Mentoring Matters (peer student mentoring program) of CMPS is asking for
+            volunteer students who are willing to serve as peer mentors for 2 hours/week. Students interested in
+            mentoring a specific CMPS course should contact Dr. Lipari via email or in person. Students from the ACM and
+            ACM-W as well as the Honors program are especially encouraged.</p>
+        <!--<ul class="actions special">
+           <li><a href="#" class="button">Join our crew</a></li>
+           </ul>-->
+    </footer>
+</div>
+<!-- Footer -->
+<div id="footer">
+    <div class="container medium">
+        <ul class="copyright">
+            <li>&copy; University of Louisiana at Lafayette. All rights reserved.</li>
+            <li>Design: <i>Directive</i> by <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+        </ul>
+    </div>
+</div>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script>includeHTML();</script>
+</body>
 </html>
