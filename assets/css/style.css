@@ -1,0 +1,73 @@
+.schedule {
+    margin: auto;
+    width: fit-content;
+    display: table;
+    table-layout: fixed
+}
+
+.row {
+    display: table-row;
+}
+
+.row1 {
+}
+
+.row2 {
+    background-color: #e0e0e0;
+}
+
+.time {
+    padding-left: 2ex;
+    padding-right: 1ex;
+    padding-top: 0ex;
+    display: table-cell;
+    min-width: 12ex;
+    width: 12ex;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.day {
+    /*border: 1px solid;*/
+    width: 17.65ex;
+    padding-top: 0ex;
+    padding-left: 0ex;
+    padding-right: 0ex;
+    color: #343434;
+    font-weight: bold;
+    display: table-cell;
+}
+
+.course1 {
+    width: 4ex;
+    font-weight: bold;
+    padding-left: 0.5ex;
+    padding-right: 0.5ex;
+    padding-top: 0ex;
+    display: table-cell;
+}
+
+.course2 {
+    width: 4ex;
+    padding-top: 0ex;
+    padding-left: 0.5ex;
+    padding-right: 0.5ex;
+    display: table-cell;
+}
+
+.gap {
+    padding-left: 0ex;
+    padding-right: 0ex;
+    /*padding-top: 30px;*/
+    width: 2ex;
+    background: #8009091c;
+    /*background: #f1e4e4;*/
+    /*background: #d5c8c8;*/
+    display: table-cell;
+}
+
+@media screen and (min-width: 1680px) {
+    #header {
+        padding-bottom: 14em;
+    }
+}
